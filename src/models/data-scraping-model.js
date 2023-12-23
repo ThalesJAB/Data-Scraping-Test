@@ -75,5 +75,3 @@ const schema = new Schema({
 
 module.exports = mongoose.model('DataScrapingData', schema);
 
-// v Classificação, v Site, v Categoria, Mudança de Ranking, Duração Média da Visita, Páginas por Visita, 
-// Taxa de Rejeição, Principais Países, Distribuição por Gênero, Distribuição por Idade, entre outros dados disponíveis.

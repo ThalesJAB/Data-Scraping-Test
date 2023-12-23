@@ -5,8 +5,6 @@ exports.getInfo = async (url) => {
   try{
     const resultadoMongoDB = await DataScrapingData.findOne({ site: url });
 
-    console.log(url);
-
     if (resultadoMongoDB != null) {
       const resultadoFormatado = {
         classificacaoGlobal: resultadoMongoDB.classificacaoGlobal,

@@ -121,8 +121,11 @@ async function extractDomain(url) {
 
 //Capturar de dados do SimilarWeb
 async function recuperarDadosSimilarWeb(content){
+  
+  // Recebe conteúdo do site
   const $ = cheerio.load(content);
 
+  
   const divGlobalRank = $(".wa-rank-list__item--global .wa-rank-list__value");
   const divCountryRank = $(".wa-rank-list__item--country .wa-rank-list__value");
   const divCategory = $(".wa-rank-list__item--category .wa-rank-list__info a");
